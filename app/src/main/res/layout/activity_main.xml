@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/layout_team">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Team A"
+                    android:id="@+id/txt_teama"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_teama"
+                    android:id="@+id/txt_scorea"
+                    android:text="0"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20dp"
+                    android:layout_marginVertical="10dp"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_scorea"
+                    android:onClick="tigaa"
+                    android:id="@+id/btn_tigaa"
+                    android:text="+3 point"
+                    android:textSize="10dp" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_tigaa"
+                    android:onClick="duaa"
+                    android:id="@+id/btn_duaa"
+                    android:text="+2 point"
+                    android:textSize="10dp" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_duaa"
+                    android:onClick="satua"
+                    android:id="@+id/btn_satua"
+                    android:text="free throw"
+                    android:textSize="10dp" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_satua"
+                    android:onClick="selesaia"
+                    android:id="@+id/menanga"
+                    android:text="A is the winner"
+                    android:textSize="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginVertical="10dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Team B"
+                    android:id="@+id/txt_teamb"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_teamb"
+                    android:id="@+id/txt_scoreb"
+                    android:text="0"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="20dp"
+                    android:layout_marginVertical="10dp"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_scoreb"
+                    android:onClick="tigab"
+                    android:id="@+id/btn_tigab"
+                    android:text="+3 point"
+                    android:textSize="10dp" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_tigab"
+                    android:onClick="duab"
+                    android:id="@+id/btn_duab"
+                    android:text="+2 point"
+                    android:textSize="10dp" />
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_duab"
+                    android:onClick="satub"
+                    android:id="@+id/btn_satub"
+                    android:text="free throw"
+                    android:textSize="10dp" />
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/btn_satub"
+                    android:onClick="selesaib"
+                    android:id="@+id/menangb"
+                    android:text="B is the winner"
+                    android:textSize="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginVertical="10dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_team"
+            android:onClick="reset"
+            android:id="@+id/btn_reset"
+            android:layout_centerHorizontal="true"
+            android:text="Reset"
+            android:layout_marginVertical="10dp"/>
+    </RelativeLayout>
+</ScrollView>
