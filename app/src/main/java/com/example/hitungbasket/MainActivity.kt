@@ -23,6 +23,13 @@ class MainActivity : AppCompatActivity() {
         txt_scorea.text=counta.toString()
         countb = sharedPreference!!.getInt(COUNTB, 0)
         txt_scoreb.text=countb.toString()
+        menanga.isChecked=false
+        menangb.isChecked=false
+        if (counta>countb){
+            menanga.isChecked=true
+        }else if(countb>counta){
+            menangb.isChecked=true
+        }
     }
     override fun onPause() {
         super.onPause()
@@ -63,5 +70,7 @@ class MainActivity : AppCompatActivity() {
         val preferencesEditor = sharedPreference?.edit()
         preferencesEditor?.clear()
         preferencesEditor?.apply()
+        menanga.isChecked=false
+        menangb.isChecked=false
     }
 }
